@@ -1,0 +1,80 @@
+/* =============================================
+   GLOBAL STYLES – The Mandalorian & Grogu
+   ============================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold: #c9a84c;
+  --gold-light: #f0d080;
+  --gold-dark: #8a6e2a;
+  --beskar: #b8c5d0;
+  --space-black: #020408;
+  --space-deep: #060c14;
+  --space-mid: #0a1628;
+  --red-saber: #cc2200;
+  --blue-glow: #4af;
+  --font-title: 'Cinzel', serif;
+  --font-body: 'Exo 2', sans-serif;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--space-black);
+  color: #fff;
+  font-family: var(--font-body);
+  overflow: hidden;
+  height: 100%;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  scroll-snap-align: start;
+  height: 100vh;
+  overflow: hidden;
+}
+
+footer {
+  scroll-snap-align: start;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--space-black); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
+
+/* Utility */
+.section-title {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--gold);
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(201,168,76,0.5);
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto 3rem;
+}

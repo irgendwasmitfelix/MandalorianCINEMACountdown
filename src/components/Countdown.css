@@ -1,0 +1,140 @@
+.countdown-section {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--space-black) 0%, var(--space-deep) 50%, var(--space-black) 100%);
+}
+
+.countdown-inner {
+  position: relative;
+  text-align: center;
+  padding: 4rem 3rem;
+  background: radial-gradient(ellipse at center, rgba(201,168,76,0.07) 0%, transparent 70%);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow:
+    0 0 60px rgba(201,168,76,0.1),
+    inset 0 0 60px rgba(201,168,76,0.03);
+}
+
+.countdown-until {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--beskar);
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.countdown-digits {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.digit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(3rem, 9vw, 5.5rem);
+  height: clamp(4rem, 11vw, 7rem);
+  background: linear-gradient(180deg, rgba(10,22,40,0.9) 0%, rgba(6,12,20,0.95) 100%);
+  border: 1px solid rgba(201,168,76,0.35);
+  border-radius: 4px;
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: var(--gold-light);
+  text-shadow:
+    0 0 20px rgba(201,168,76,0.8),
+    0 0 40px rgba(201,168,76,0.4);
+  box-shadow:
+    0 0 20px rgba(201,168,76,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  transition: color 0.1s;
+}
+
+.countdown-label {
+  font-size: clamp(0.55rem, 1.2vw, 0.75rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  font-family: var(--font-body);
+}
+
+.countdown-sep {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--gold);
+  margin-bottom: 1.8rem;
+  opacity: 0.6;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.2; }
+}
+
+.countdown-date {
+  font-family: var(--font-title);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(201,168,76,0.5);
+}
+
+.countdown-tagline {
+  font-style: italic;
+  color: var(--beskar);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+}
+
+.countdown-released {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.released-text {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--gold);
+  text-shadow: 0 0 40px rgba(201,168,76,0.7);
+  margin-bottom: 1rem;
+}
+
+.released-sub {
+  font-style: italic;
+  color: var(--beskar);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .countdown-inner { padding: 2.5rem 1rem; }
+  .countdown-sep { display: none; }
+  .countdown-timer { gap: 1rem; }
+}
