@@ -17,7 +17,7 @@ const images = [
   {
     src: 'https://wallpapercave.com/wp/wp14136174.jpg',
     alt: 'The Mandalorian & Grogu Movie Completes',
-    label: 'Der Film 2026',
+    label: 'The Movie 2026',
     res: '2000×1000',
   },
   {
@@ -35,7 +35,7 @@ const images = [
   {
     src: 'https://wallpapercave.com/wp/wp14136179.jpg',
     alt: 'Mandalorian and Baby Yoda Wallpaper HD',
-    label: 'Mando & Grogu Mobil',
+    label: 'Mando & Grogu Mobile',
     res: '1183×2560',
   },
   // Alphacoders
@@ -47,20 +47,20 @@ const images = [
   },
   {
     src: 'https://images.alphacoders.com/135/thumb-1920-1353795.png',
-    alt: 'Mandalorian und Grogu – Wüstenplanet',
-    label: 'Mando & Grogu Wüste',
+    alt: 'Mandalorian and Grogu – Desert Planet',
+    label: 'Mando & Grogu Desert',
     res: '2912×1632',
   },
   {
     src: 'https://images.alphacoders.com/129/thumb-1920-1298487.jpg',
-    alt: 'Grogu in Mandos Arm – grüner Himmel',
+    alt: 'Grogu in Mando\'s arms – green sky',
     label: 'Grogu & Mando',
     res: '2500×1406',
   },
   {
     src: 'https://images.alphacoders.com/140/thumb-1920-1403422.jpg',
-    alt: 'Mando hält Grogu – Feuerhimmel',
-    label: 'Feuerhimmel',
+    alt: 'Mando holds Grogu – fiery sky',
+    label: 'Fiery Sky',
     res: '3840×2160',
   },
 ]
@@ -75,7 +75,7 @@ export default function Gallery() {
 
   return (
     <section className="gallery-section">
-      <h2 className="section-title">Galerie</h2>
+      <h2 className="section-title">Gallery</h2>
       <div className="section-divider" />
 
       <div className="gallery-grid">
@@ -84,7 +84,7 @@ export default function Gallery() {
             key={i}
             className={`gallery-item${failed.has(i) ? ' gallery-item--hidden' : ''}`}
             onClick={() => !failed.has(i) && setLightbox(img)}
-            aria-label={`Bild vergrößern: ${img.alt}`}
+            aria-label={`Enlarge image: ${img.alt}`}
           >
             <img
               src={img.src}
@@ -105,12 +105,12 @@ export default function Gallery() {
           onClick={() => setLightbox(null)}
           role="dialog"
           aria-modal="true"
-          aria-label="Bild-Vorschau"
+          aria-label="Image preview"
         >
           <button
             className="lightbox-close"
             onClick={() => setLightbox(null)}
-            aria-label="Schließen"
+            aria-label="Close"
           >
             ✕
           </button>

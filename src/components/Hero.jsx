@@ -69,7 +69,7 @@ export default function Hero() {
           </div>
         ) : (
           <div className="countdown-inner">
-            <p className="countdown-until">Ab in die Kinos in</p>
+            {/* Removed 'Ab in die Kinos in' as requested */}
             <div className="countdown-timer">
               <Digit value={time.days} label="Tage" />
               <span className="countdown-sep">:</span>
@@ -79,7 +79,7 @@ export default function Hero() {
               <span className="countdown-sep">:</span>
               <Digit value={time.seconds} label="Sekunden" />
             </div>
-            <p className="countdown-date">22. Mai 2026 · Im Kino</p>
+            <p className="countdown-date" style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.3em', marginTop: '1em'}}>22. Mai 2026</p>
             <p className="countdown-tagline">„This is The Way.“</p>
           </div>
         )}

@@ -20,9 +20,7 @@ export default function Trailer() {
             allowFullScreen
           />
         </div>
-        <p className="trailer-caption">
-          „The Mandalorian &amp; Grogu" – ab 22. Mai 2026 in euren Kinos
-        </p>
+        {/* Removed German release caption as requested */}
       </div>
     </section>
   )

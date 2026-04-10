@@ -3,26 +3,26 @@ import './Characters.css'
 const characters = [
   {
     name: 'Din Djarin',
-    subtitle: 'Der Mandalorianer',
+    subtitle: 'The Mandalorian',
     img: 'https://img.youtube.com/vi/_pa1KLXuW0Y/maxresdefault.jpg',
     quote: '"I can bring you in warm, or I can bring you in cold."',
     desc:
-      'Ein einsamer Kopfgeldjäger aus dem äußeren Rand der Galaxis. Gepanzert mit Beskar-Stahl, loyal bis zum Tod – und Vater einer Legende.',
+      'A lone bounty hunter from the Outer Rim of the galaxy. Armored with Beskar steel, loyal to the end – and father of a legend.',
   },
   {
     name: 'Grogu',
-    subtitle: 'Das Kind',
+    subtitle: 'The Child',
     img: 'https://img.youtube.com/vi/IHWlvwu8t1w/maxresdefault.jpg',
-    quote: '"…" (spricht für sich selbst)',
+    quote: '"…" (speaks for himself)',
     desc:
-      'Ein rätselhaftes Wesen gleicher Spezies wie Meister Yoda. Mächtig in der Macht, zerbrechlich im Herz – und der Grund, warum Mando noch lebt.',
+      'A mysterious being of the same species as Master Yoda. Powerful in the Force, fragile at heart – and the reason Mando is still alive.',
   },
 ]
 
 export default function Characters() {
   return (
     <section className="characters-section">
-      <h2 className="section-title">Die Charaktere</h2>
+      <h2 className="section-title">Characters</h2>
       <div className="section-divider" />
 
       <div className="characters-grid">

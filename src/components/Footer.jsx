@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-logo">
           <span className="footer-title">The Mandalorian &amp; Grogu</span>
-          <span className="footer-sub">22. Mai 2026 · Im Kino</span>
+              <span className="footer-sub">May 22, 2026 · In theaters</span>
         </div>
 
         <div className="footer-divider" />
@@ -26,7 +26,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="footer-link"
           >
-            Offizieller Trailer
+                Official Trailer
           </a>
           <a
             href="https://www.disneyplus.com"
@@ -39,9 +39,7 @@ export default function Footer() {
         </div>
 
         <p className="footer-disclaimer">
-          Diese Seite ist ein Fan-Projekt. Star Wars, The Mandalorian und alle
-          zugehörigen Charaktere und Markennamen sind Eigentum von Lucasfilm Ltd.
-          &amp; Disney. Alle Rechte vorbehalten.
+              This site is a fan project. Star Wars, The Mandalorian and all related characters and brand names are property of Lucasfilm Ltd. & Disney. All rights reserved.
         </p>
 
         <p className="footer-tagline">"This is The Way."</p>
