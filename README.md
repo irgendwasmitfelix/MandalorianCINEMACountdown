@@ -1,3 +1,8 @@
+[![Watch Live](https://img.shields.io/badge/▶_Watch_Live-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@TheEfficientDev)
+[![Trading Bot](https://img.shields.io/badge/Trading_Bot-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/felix-helleckes/TradingBot)
+[![Portfolio](https://img.shields.io/badge/Portfolio-felix--helleckes.github.io-0a66c2?style=for-the-badge&logo=github)](https://felix-helleckes.github.io/)
+
+
 # The Mandalorian & Grogu – Movie Countdown
 
 A fan-made React countdown website for the upcoming **"The Mandalorian & Grogu"** movie, releasing in cinemas on **May 22, 2026**.
