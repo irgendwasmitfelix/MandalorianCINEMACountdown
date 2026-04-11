@@ -43,6 +43,9 @@ export default function Footer() {
         </p>
 
         <p className="footer-tagline">"This is The Way."</p>
+        <p className="footer-challenge" style={{marginTop:'1.2em',color:'#ffe082',fontWeight:600}}>
+          <span role="img" aria-label="rocket">🚀</span> <b>MISSION 100K:</b> Subscribe to <a href="https://youtube.com/@theefficientdev" target="_blank" rel="noopener noreferrer" style={{color:'#fff'}}>youtube.com/@theefficientdev</a> for a chance to win 1 of 5 Star Wars Outlaws keys if we reach 100,000 subs by the movie release!
+        </p>
 
         <div className="footer-divider" style={{ marginTop: '2rem' }} />
 
